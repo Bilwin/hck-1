@@ -38,17 +38,19 @@
 </head>
 <body>
     <div class="content">
-        <aside style="position:fixed; top:0; overflow:hidden; width:240px;">
+        <aside style="position:fixed; top:0; overflow:hidden; height:500px; width:240px;">
             <ul>
                 <li style="text-decoration:none;"><a href="/">Главная</a></li>
                 <li><a href="/Help">Помощь</a></li>
                 <li><a href="/Board">Доска животных</a></li>
                 <li><a href="/Map">Карта Приютов</a></li>
             </ul>
+
+            <component type="typeof(SinglePetCard)" render-mode="ServerPrerendered"></component>
         </aside>
 
         <main class="content" style="margin-left:240px; flex-wrap:wrap;">
-           <component type="typeof(Pet)" render-mode="ServerPrerendered" ></component>
+            <component style="margin:100px;" type="typeof(PetCard)" render-mode="ServerPrerendered"></component>
         </main>
     </div>
 </body>

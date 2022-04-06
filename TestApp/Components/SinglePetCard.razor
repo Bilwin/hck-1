@@ -1,10 +1,16 @@
-﻿<div style="margin:100px;">
+﻿<div hidden="@Hidden">
     <div style="text-align:center; height:200px; width:200px;">
         <img height="100px" width="100px" src="/images/cat_example.png" />
         <h2>Lorum ipsum</h2>
         <p>Lorem ipsum dolor sit amet</p>
         <p>Lorem ipsum dolor sit amet</p>
         <p>Lorem ipsum dolor sit amet</p>
-        <button style="margin:15px;">Take</button>
+        <button @onclick="ActivateCard" style="margin:15px;">Take</button>
     </div>
 </div>
+
+@code
+{
+    [Parameter]
+    public bool Hidden { get; set; } = true;
+}
