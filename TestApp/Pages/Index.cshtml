@@ -1,0 +1,55 @@
+﻿@page "/"
+@model AdoptPets.Pages.MainModel
+@using AdoptPets.Components
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.scss" />
+    <title>Main</title>
+
+    <style>
+        .content, main {
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            min-width: 200px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <aside style="position:fixed; top:0; overflow:hidden; width:240px;">
+            <ul>
+                <li style="text-decoration:none;"><a href="/">Главная</a></li>
+                <li><a href="/Help">Помощь</a></li>
+                <li><a href="/Board">Доска животных</a></li>
+                <li><a href="/Map">Карта Приютов</a></li>
+            </ul>
+        </aside>
+
+        <main class="content" style="margin-left:240px; flex-wrap:wrap;">
+           <component type="typeof(Pet)" render-mode="ServerPrerendered" ></component>
+        </main>
+    </div>
+</body>
+</html>

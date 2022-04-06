@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Aeroport';
+    src: url("C:\Users\29166.DESKTOP-3A4STP9\Documents\GitHub\hck-1\TestApp\wwwroot\fonts\Aeroport-Bold\Aeroport-Bold.eot");
+    src: local('Aeroport Bold'), local('Aeroport-Bold'),
+        url('Aeroport-Bold.eot?#iefix') format('embedded-opentype'),
+        url("C:\Users\29166.DESKTOP-3A4STP9\Documents\GitHub\hck-1\TestApp\wwwroot\fonts\Aeroport-Bold\Aeroport-Bold.woff2") format('woff2'),
+        url("C:\Users\29166.DESKTOP-3A4STP9\Documents\GitHub\hck-1\TestApp\wwwroot\fonts\Aeroport-Bold\Aeroport-Bold.woff") format('woff'),
+        url("C:\Users\29166.DESKTOP-3A4STP9\Documents\GitHub\hck-1\TestApp\wwwroot\fonts\Aeroport-Bold\Aeroport-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
